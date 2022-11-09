@@ -1,0 +1,56 @@
+<div class="background-image">
+
+
+  <!-- <ngb-carousel *ngIf="images" >
+<ng-template *ngFor="let image of images" ngbSlide  style="height:600px ;">
+  <div class="picsum-img-wrapper">
+    <img [src]="image.imageSrc" alt="Random first slide">
+  </div>
+  
+</ng-template>
+
+</ngb-carousel> -->
+  <!-- <div>
+  <video   autoplay muted loop >
+    <source src="https://imamu.edu.sa/_layouts/15/2016/Portal/img/vidbg.mp4" type="video/mp4" >
+  </video>
+</div> -->
+  <section class="fullscreen-video-wrap">
+    <video style="z-index: -1;"  [muted]="true" autoplay playsinline loop id="video" 
+      src="assets/images/vidbg.mp4"></video>
+
+
+
+  </section>
+
+</div>
+
+<div style="position: absolute;">
+  <div class="container">
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="d-flex flex-wrap">
+        <!-- kware edit
+  translate home-news screen -->
+        <div>
+          <h1 style="margin-top: -730px; margin-bottom: -20px;z-index: 1000;color: #ffe59a;"
+            class="display-3">{{ "home.news.dspace7" | translate }}</h1>
+          <!-- <p class="lead">{{ "home.news.dspace.intro.header" | translate }}</p> -->
+        </div>
+      </div>
+      <ul style="list-style:none ;margin-bottom: 10px;margin-top: -595px;">
+
+        <li style=" margin-bottom: -5px;color: #ffe59a;">
+          <br> <br>
+          {{ "home.news.dspace.intro.content1" | translate }}
+        </li>
+        <li style=" margin-bottom: -60px;color: #ffe59a;">
+          <br>
+          {{ "home.news.dspace.intro.content2" | translate }}
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</div>
